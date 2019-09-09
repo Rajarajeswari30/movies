@@ -1,0 +1,13 @@
+<body>
+<form [formGroup]="page1">
+<h2>Sign-up Form</h2><br><br>
+UserName:
+<input type="text" formControlName="username" style="margin-left: 75px"><br><br>
+Password:
+<input type="password" formControlName="password" style="margin-left: 80px"><br><br>
+Confirm Password:
+<input type="password" formControlName="confirm" style="margin-left: 20px"><br><br>
+<button (click)="open(page1.value)" >Register</button><br><br>
+<p>Already have an acc?<a (click)="log()" style="color: red" routerLink="page2">Login</a></p>
+</form>
+</body>
